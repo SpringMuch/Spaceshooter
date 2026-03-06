@@ -3,8 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void OnPlayButtonClicked()
+    public void PlayGame()
     {
         SceneManager.LoadScene("Battle");
+    }
+    public void ReturnMain()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

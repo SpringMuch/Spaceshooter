@@ -5,6 +5,7 @@ public class Health : MonoBehaviour
     public GameObject explosionPrefab;
     public int defaultHealthPoint;
     private int healthPoint;
+    public System.Action onDead;
 
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,11 +22,12 @@ public class Health : MonoBehaviour
         if (healthPoint <= 0) Die();
     }
 
-    private void Die()
+    protected virtual void Die()
     {
         var explosion = Instantiate(explosionPrefab, transform.position,
         transform.rotation);
         Destroy(explosion, 1);
         Destroy(gameObject);
+        onDead?.Invoke();
     }
 }

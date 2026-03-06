@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerHealth : Health
 {
-    protected override void OnTriggerEnter2D(Collider2D collision)
+    protected override void Die()
     {
-        base.OnTriggerEnter2D(collision);
+        base.Die();
     }
+
 }

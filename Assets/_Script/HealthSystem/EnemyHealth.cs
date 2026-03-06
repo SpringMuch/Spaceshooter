@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class EnemyHealth : Health
 {
-    protected override void OnTriggerEnter2D(Collider2D collision)
+    public static int LivingEnemyCount;
+    private void Awake() => LivingEnemyCount++;
+
+    protected override void Die()
     {
-        base.OnTriggerEnter2D(collision);
+        LivingEnemyCount--;
+        base.Die();
     }
 }
