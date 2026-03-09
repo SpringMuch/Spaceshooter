@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 2383705114810921128}
   - component: {fileID: 6976258605413133422}
   - component: {fileID: 6989993582606818776}
-  - component: {fileID: 2057772957549934713}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -106,6 +105,7 @@ MonoBehaviour:
   explosionPrefab: {fileID: 4795564514547139055, guid: 5c2b9d74a07998546aedefdc334a5a7d,
     type: 3}
   defaultHealthPoint: 10
+  healthPoint: 0
 --- !u!114 &4264420917483957170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,21 +270,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2057772957549934713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6038087715946021138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a89010e2a91c91c43ab88b6d7297bee2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 4795564514547139055, guid: 5c2b9d74a07998546aedefdc334a5a7d,
-    type: 3}
-  defaultHealthPoint: 10
 --- !u!1 &6472196371102068337
 GameObject:
   m_ObjectHideFlags: 0
